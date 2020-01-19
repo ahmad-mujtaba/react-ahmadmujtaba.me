@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #2d2231 radial-gradient(ellipse at top center, #5d4964 0%, #2d2231 75%) no-repeat;
+  color: #eee;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 14px; }
+  body .resume {
+    max-width: 960px;
+    padding: 20px;
+    margin: 0 auto; }
+    body .resume header {
+      text-align: center; }
+      body .resume header h1 {
+        font-size: 42px;
+        font-weight: normal;
+        text-transform: uppercase; }
+      body .resume header .designation {
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 1rem;
+        text-transform: uppercase; }
+      body .resume header .header-details {
+        border: 1px solid rgba(255, 255, 255, 0.09);
+        border-width: 1px 0;
+        padding: 1rem 0;
+        margin-top: 1rem; }
+        body .resume header .header-details div {
+          display: inline-block;
+          margin-right: 1.5rem; }
+          body .resume header .header-details div i {
+            margin-right: 0.5rem; }
+    body .resume .resume-body > div {
+      margin-bottom: 1rem; }
+      body .resume .resume-body > div h2 {
+        padding: 1rem 0;
+        margin-bottom: 1rem;
+        font-weight: normal;
+        text-transform: uppercase;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.09); }
+      body .resume .resume-body > div ul li {
+        list-style: none;
+        margin-bottom: 1rem; }
+        body .resume .resume-body > div ul li:before {
+          content: "*";
+          color: rgba(255, 255, 255, 0.15);
+          display: block;
+          float: left; }
+        body .resume .resume-body > div ul li span {
+          margin-left: 1.6rem;
+          display: block; }
+      body .resume .resume-body > div .academics-grid {
+        display: grid;
+        grid-template-areas: "academics academics academics"; }
+        body .resume .resume-body > div .academics-grid .academics-item {
+          grid-area: 'academics';
+          text-align: center;
+          border-right: 1px solid rgba(255, 255, 255, 0.09); }
+          body .resume .resume-body > div .academics-grid .academics-item:last-child {
+            border-right: 0; }
+          body .resume .resume-body > div .academics-grid .academics-item div {
+            margin-bottom: 0.5rem; }
+          body .resume .resume-body > div .academics-grid .academics-item .year, body .resume .resume-body > div .academics-grid .academics-item .class, body .resume .resume-body > div .academics-grid .academics-item .subject {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6); }
+          body .resume .resume-body > div .academics-grid .academics-item .name {
+            font-weight: bold;
+            font-size: 18px; }
+          body .resume .resume-body > div .academics-grid .academics-item .score {
+            font-size: 48px;
+            font-weight: lighter; }
+    body .resume .resume-body .skills-table {
+      width: 100%; }
+      body .resume .resume-body .skills-table td {
+        padding: 1rem;
+        font-weight: bold; }
+      body .resume .resume-body .skills-table .skill-duration {
+        font-weight: normal;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 12px;
+        padding-top: 0.5rem; }
+    body .resume h1, body .resume h2 {
+      font-family: 'Cinzel', serif; }
+    body .resume h3 {
+      margin: 1rem 0;
+      text-decoration: underline;
+      font-weight: normal; }

@@ -1,0 +1,159 @@
+* {
+    margin:0;
+    padding:0;
+
+}
+
+body {
+    background:#2d2231 radial-gradient(ellipse at top center, #5d4964 0%, #2d2231 75%) no-repeat;
+    color:#eee; 
+    font-family:'Roboto', 'Arial', sans-serif;
+    font-size:14px;
+
+
+    .resume {
+        max-width:960px;
+        padding:20px;
+        margin:0 auto;
+
+
+        header {
+            text-align:center;
+
+            h1 {
+                font-size:42px;
+                font-weight:normal;
+                text-transform: uppercase;
+            }
+
+            .designation {
+                font-size:16px;
+                font-weight:bold;
+                margin-top:1rem;
+                text-transform: uppercase;
+            }
+
+            .header-details {
+                border:1px solid rgba(255, 255, 255, 0.09);
+                border-width:1px 0;
+                padding:1rem 0;
+                margin-top:1rem;
+
+                div {
+                    display:inline-block;
+                    margin-right:1.5rem;
+
+
+                    i {
+                        margin-right:0.5rem;
+                    }
+                }
+            }
+        }
+
+        .resume-body {
+            &>div {
+                margin-bottom : 1rem;
+
+                h2 {
+                    padding:1rem 0;
+                    margin-bottom:1rem;
+                    font-weight:normal;
+                    text-transform:uppercase;
+                    border-bottom:1px solid rgba(255, 255, 255, 0.09);
+                }
+
+                ul {
+
+                    
+                    li {
+
+                        list-style:none;
+                        margin-bottom:1rem;
+
+
+                        &:before {
+                            content: "*";
+                            color: rgba(255, 255, 255, 0.15);
+                            display: block;
+                            float: left;
+                        }
+
+                        span {
+                            margin-left:1.6rem;
+                            display:block;
+                        }
+
+
+                    }
+                }
+
+                .academics-grid {
+                    display:grid;
+                    grid-template-areas: "academics academics academics";
+
+
+                    .academics-item {
+                        grid-area:'academics';
+                        text-align:center;
+                        border-right:1px solid rgba(255,255,255, 0.09);
+
+                        &:last-child {
+                            border-right:0;
+                        }
+
+                        div {
+                            margin-bottom:0.5rem;
+                        }
+
+                        .year,.class, .subject {
+                            font-size:14px;
+                            color:rgba(255, 255, 255, 0.6);
+                        }
+
+                        .name {
+                            font-weight:bold;
+                            font-size:18px;
+                        }
+                        .score {
+                            font-size:48px;
+                            font-weight:lighter;
+                        }
+                    }
+                }
+
+
+
+            }
+
+            
+            .skills-table {
+                width:100%;
+
+                td {
+                    padding:1rem;
+                    font-weight:bold;
+                }
+
+
+                .skill-duration {
+                    font-weight:normal;
+                    color:rgba(255, 255, 255, 0.6);
+                    font-size:12px;padding-top:0.5rem;
+                }
+            }
+        }
+
+        
+
+        h1, h2 {
+            font-family: 'Cinzel', serif; 
+        }
+
+        h3 {
+            margin:1rem 0;
+            text-decoration: underline;
+            font-weight:normal;
+        }
+    }
+}
